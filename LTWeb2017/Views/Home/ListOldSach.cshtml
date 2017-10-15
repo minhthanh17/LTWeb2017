@@ -1,0 +1,6 @@
+﻿@model List<DbSachOnline.EF.Sach>
+
+@foreach (var item in Model)
+{
+    <li><a href="brands.html"><img src="~/Content/NguoiDung/AnhSach/@item.AnhBia" alt="" title="@item.TenSach" width="80" height="100"></a></li>
+}

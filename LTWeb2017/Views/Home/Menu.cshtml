@@ -1,0 +1,41 @@
+﻿<li class="menu_item down">
+    <a href="/Home/index">Trang chủ</a>
+</li>
+<li class="menu_item down">
+    <a href="category.html">Chủ đề</a>
+    <div class="sub_menu" style="">
+        <div class="bubble"></div>
+        <div class="sub_menu_block" style="width:163px">
+            <ul>
+                @{ Html.RenderAction("ListBookWithTitle","Home");}
+            </ul>
+        </div>
+    </div>
+</li>
+<li class="menu_item down">
+    <a href="category.html">Tủ sách</a>
+    <div class="sub_menu" style="">
+        <div class="bubble"></div>
+        <div class="sub_menu_block" style="width:163px">
+            <ul>
+                <li><a href="category.html">Scitote</a></li>
+                <li><a href="category.html">Participat</a></li>
+            </ul>
+        </div>
+    </div>
+</li>
+<li class="menu_item down">
+    <a href="category.html">Bán chạy</a>
+    <div class="sub_menu" style="">
+        <div class="bubble"></div>
+        <div class="sub_menu_block" style="width:163px">
+            <ul>
+                <li><a href="category.html">Participat</a></li>
+                <li><a href="category.html">Scitote</a></li>
+                <li><a href="category.html">Scitote</a></li>
+                <li><a href="category.html">WScitote</a></li>
+            </ul>
+        </div>
+    </div>
+</li>
+<li class="menu_item down"><a href="#about_us">Thông tin về chúng tôi</a> </li>

@@ -1,0 +1,13 @@
+﻿@model List<DbSachOnline.EF.Sach>
+
+@foreach (var item in Model)
+{
+    <div class="box-product">
+        <a class="image" href="product.html" title="View more"> <img src="~/Content/NguoiDung/AnhSach/@item.AnhBia" alt=""> </a>
+        <h3 class="name"><a href="product.html" title="">@item.TenSach</a></h3>
+        <p class="wrap_price"> <span class="price">@item.GiaBan</span> </p>
+        <p class="submit">
+            <input type="button" value="Thêm vào giỏ" class="button">
+        </p>
+    </div>
+}

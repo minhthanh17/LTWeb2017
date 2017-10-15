@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content">
+    <div id="slide-wrapper">
+        <ul id="slider">
+            <li>
+                <div class="border_on_img"></div>
+                <div class="content_slider">
+                    <p>Khoa học và tự nhiên.</p>
+                </div>
+                <img src="~/Content/NguoiDung/image1.jpg" alt="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.">
+            </li>
+            <li>
+                <div class="border_on_img"></div>
+                <div class="content_slider">
+                    <p>Công nghệ và cuộc sống</p>
+                </div>
+                <img src="~/Content/NguoiDung/image2.png" alt="sed diam nonummy">
+            </li>
+            <li>
+                <div class="border_on_img"></div>
+                <div class="content_slider">
+                    <p>Âm nhạc.</p>
+                </div>
+                <img src=" ~/Content/NguoiDung/image3.jpg"alt="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.">
+            </li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div><a href="specials.html"><img src="~/Content/NguoiDung/NauAn.jpg" height="160" width="225"alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"></a> </div>
+    </div>
+    <div class="banner">
+        <div><img src="~/Content/NguoiDung/ngontinh.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" height="160" width="225"> </div>
+    </div>
+    <div class="box">
+        <div>
+            <h1 class="title_module"><span>Sách bán chạy</span></h1>
+            <div class="box-content">
+                
+                    @{ Html.RenderAction("NewSach","Home");}
+
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="box">
+        <div>
+            <h1 class="title_module"><span>Sách độc quyền</span></h1>
+            <div class="box-content">
+                    @{ Html.RenderAction("ListSachGiaCao", "Home");}
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="box">
+        <div>
+            <h1 class="title_module"><span>Sách giảm giá</span></h1>
+            <div class="box-content">
+               
+                @{ Html.RenderAction("ListSachSale", "Home");}
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="carousel">
+        <ul class=" jcarousel-skin-tfc">
+            @{ Html.RenderAction("ListOldSach", "Home");}
+        </ul>
+    </div>
+</div>
+
+
+
